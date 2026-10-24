@@ -1,0 +1,147 @@
+<div class="create_film container py-100">
+
+    <div class="title_block">
+        <div class="title">
+            <div class="subheading">
+                <hr>
+                <p>КАРТОЧКА ФИЛЬМА</p>
+            </div>
+            <h2>Редактирование фильма</h2>
+        </div>
+    </div>
+
+    <div class="create_film_form_wrapper">
+        
+        <div class="create_film_sidebar">
+
+            <div class="upload_card">
+                <h3>Афиша</h3>
+                <p class="upload_desc">Изображение формата JPG, PNG, JPEG, размером не более 2МБ</p>
+                
+                <div class="upload_preview">
+                    <img src="../images/poster2.png" alt="Постер">
+                    <label class="upload_btn_change">
+                        <input type="file" hidden>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z" fill="white"/>
+                        </svg>
+                        Заменить афишу
+                    </label>
+                </div>
+            </div>
+
+            <div class="upload_card">
+                <h3>Трейлер</h3>
+                <p class="upload_desc">Видео формата MP4, размером не более 300 МБ и разрешением 1920x1080</p>
+                
+                <div class="upload_preview">
+                    <img src="../images/poster2.png" alt="Трейлер">
+                    <label class="upload_btn_change">
+                        <input type="file" hidden>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z" fill="white"/>
+                        </svg>
+                        Заменить видео
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="create_film_form">
+            <h3>Информация о фильме</h3>
+            <form action="">
+                
+                <div class="form_group">
+                    <label>Название</label>
+                    <input type="text" value="Сумерки">
+                </div>
+
+                <div class="form_row">
+                    <div class="form_group">
+                        <label>Краткое описание</label>
+                        <textarea>Семнадцатилетняя Белла переезжает в небольшой город Форкс и знакомится с загадочным Эдвардом Калленом.</textarea>
+                    </div>
+                    <div class="form_group">
+                        <label>Подробное описание</label>
+                        <textarea>Вскоре Белла понимает, что Эдвард принадлежит к семье вампиров. Несмотря на опасность, их чувства...</textarea>
+                    </div>
+                </div>
+
+                <div class="form_row form_row_3">
+                    <div class="form_group">
+                        <label>Жанр</label>
+                        <div class="select_wrapper">
+                            <select>
+                                <option value="drama">Мелодрама</option>
+                                <option value="action">Боевик</option>
+                            </select>
+                            <svg class="select_arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="#F3EFE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <label>Длительность</label>
+                        <input type="text" value="122 мин">
+                    </div>
+                    <div class="form_group">
+                        <label>Возраст</label>
+                        <div class="select_wrapper">
+                            <select>
+                                <option value="16">16+</option>
+                                <option value="12">12+</option>
+                                <option value="18">18+</option>
+                            </select>
+                            <svg class="select_arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="#F3EFE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_row form_row_3">
+                    <div class="form_group">
+                        <label>Страна</label>
+                        <input type="text" value="США">
+                    </div>
+                    <div class="form_group">
+                        <label>Год</label>
+                        <input type="text" value="2008">
+                    </div>
+                    <div class="form_group">
+                        <label>Дата премьеры</label>
+                        <input type="text" value="2026">
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <label>Режиссёр</label>
+                    <input type="text" value="Кэтрин Хардвик">
+                </div>
+
+                <div class="form_group">
+                    <label>Актёры</label>
+                    <textarea>Кристен Стюарт, Роберт Паттинсон, Билли Бёрк, Питер Фачинелли, Эшли Грин</textarea>
+                </div>
+
+                <div class="form_actions">
+                    <button type="submit" class="save_btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16L21 8V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 3V8H15V3M7 21V15H17V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Применить изменения
+                    </button>
+                    
+                    <a href="/?page=admin" class="back_link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="#A29E9A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Вернуться к просмотру афиши фильмов
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,783 @@
+<div class="profile">
+    <div class="profile_block container">
+        <div class="profile_nav">
+            <div class="admin_title">
+                <h3>АДМИН ПАНЕЛЬ</h3>
+            </div>
+            <h3>ПАНЕЛЬ УПРАВЛЕНИЯ</h3>
+            <div class="nav_links">
+                <button type="button" class="link active" data-tab="stats">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 2.5H3.33333C2.8731 2.5 2.5 2.8731 2.5 3.33333V9.16667C2.5 9.6269 2.8731 10 3.33333 10H7.5C7.96024 10 8.33333 9.6269 8.33333 9.16667V3.33333C8.33333 2.8731 7.96024 2.5 7.5 2.5Z" stroke="#A29E9A" stroke-width="1.8" stroke-linecap="round" />
+                        <path d="M16.6667 2.5H12.5C12.0398 2.5 11.6667 2.8731 11.6667 3.33333V5.83333C11.6667 6.29357 12.0398 6.66667 12.5 6.66667H16.6667C17.1269 6.66667 17.5 6.29357 17.5 5.83333V3.33333C17.5 2.8731 17.1269 2.5 16.6667 2.5Z" stroke="#A29E9A" stroke-width="1.8" stroke-linecap="round" />
+                        <path d="M16.6667 10H12.5C12.0398 10 11.6667 10.3731 11.6667 10.8333V16.6667C11.6667 17.1269 12.0398 17.5 12.5 17.5H16.6667C17.1269 17.5 17.5 17.1269 17.5 16.6667V10.8333C17.5 10.3731 17.1269 10 16.6667 10Z" stroke="#A29E9A" stroke-width="1.8" stroke-linecap="round" />
+                        <path d="M7.5 13.3333H3.33333C2.8731 13.3333 2.5 13.7064 2.5 14.1667V16.6667C2.5 17.1269 2.8731 17.5 3.33333 17.5H7.5C7.96024 17.5 8.33333 17.1269 8.33333 16.6667V14.1667C8.33333 13.7064 7.96024 13.3333 7.5 13.3333Z" stroke="#A29E9A" stroke-width="1.8" stroke-linecap="round" />
+                    </svg>
+                    <p>Статистика</p>
+                </button>
+
+                <button type="button" class="link" data-tab="films">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.7627 3.03149L10.7628 3.03167M10.7628 3.03167L13.4051 6.4929M10.7628 3.03167L14.7912 1.83807C15.7537 1.57557 16.7162 2.10057 16.9787 2.97557L17.6787 5.25057L13.4051 6.4929M10.7628 3.03167L2.97874 5.33807C2.10374 5.60057 1.57874 6.56307 1.84124 7.52557L2.62874 9.62557M13.4051 6.4929L13.4052 6.49299M13.4051 6.4929L8.12299 8.0284M2.62874 9.62557L8.12299 8.0284M2.62874 9.62557L18.3788 9.62561V16.6256C18.3788 17.0897 18.1944 17.5349 17.8662 17.863C17.538 18.1912 17.0929 18.3756 16.6288 18.3756H4.37878C3.91466 18.3756 3.46954 18.1912 3.14135 17.863C2.81316 17.5349 2.62878 17.0897 2.62878 16.6256L2.62874 9.62557ZM8.12299 8.0284L5.41101 4.61743M8.12299 8.0284L8.12351 8.02906" stroke-width="1.8" stroke-linecap="round" stroke="#77736F" />
+                    </svg>
+                    <p>Афиша фильмов</p>
+                </button>
+
+                <button type="button" class="link" data-tab="sessions">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 1.74927V3.49941M7 3.49941V5.24955M7 3.49941H4.375C3.4085 3.49941 2.625 4.28297 2.625 5.24955V8.74983M7 3.49941H14M14 1.74927V3.49941M14 3.49941V5.24955M14 3.49941H16.625C17.5915 3.49941 18.375 4.28297 18.375 5.24955V8.74983M2.625 8.74983H18.375M2.625 8.74983V17.5005C2.625 18.4671 3.4085 19.2507 4.375 19.2507H16.625C17.5915 19.2507 18.375 18.4671 18.375 17.5005V8.74983M7 12.2501H7.00875M10.5 12.2501H10.5087M14 12.2501H14.0087M7 15.7504H7.00875M10.5 15.7504H10.5087M14 15.7504H14.0087" stroke-width="1.8" stroke-linecap="round" stroke="#77736F" />
+                    </svg>
+                    <p>Сеансы</p>
+                </button>
+
+                <button type="button" class="link" data-tab="sales">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3742 13.9992H6.99965M12.2491 6.99931H6.99965M13.999 10.4993H6.99965M3.5 2.62409C3.5 2.39203 3.59218 2.16947 3.75626 2.00538C3.92033 1.84129 4.14287 1.7491 4.37491 1.7491C4.59156 1.74791 4.80404 1.80862 4.98735 1.9241L5.80364 2.44909C5.98653 2.56597 6.19904 2.62807 6.41608 2.62807C6.63312 2.62807 6.84563 2.56597 7.02852 2.44909L7.84569 1.9241C8.02858 1.80722 8.24109 1.74512 8.45813 1.74512C8.67517 1.74512 8.88768 1.80722 9.07057 1.9241L9.88686 2.44909C10.0698 2.56597 10.2823 2.62807 10.4993 2.62807C10.7163 2.62807 10.9288 2.56597 11.1117 2.44909L11.928 1.9241C12.1109 1.80722 12.3234 1.74512 12.5405 1.74512C12.7575 1.74512 12.97 1.80722 13.1529 1.9241L13.9701 2.44909C14.153 2.56597 14.3655 2.62807 14.5825 2.62807C14.7996 2.62807 15.0121 2.56597 15.195 2.44909L16.0112 1.9241C16.1946 1.80862 16.407 1.74791 16.6237 1.7491C16.8557 1.7491 17.0783 1.84129 17.2423 2.00538C17.4064 2.16947 17.4986 2.39203 17.4986 2.62409V18.3738C17.4986 18.6059 17.4064 18.8285 17.2423 18.9926C17.0783 19.1566 16.8557 19.2488 16.6237 19.2488C16.407 19.25 16.1946 19.1893 16.0112 19.0738L15.195 18.5488C15.0121 18.432 14.7996 18.3699 14.5825 18.3699C14.3655 18.3699 14.153 18.432 13.9701 18.5488L13.1529 19.0738C12.97 19.1907 12.7575 19.2528 12.5405 19.2528C12.3234 19.2528 12.1109 19.1907 11.928 19.0738L11.1117 18.5488C10.9288 18.432 10.7163 18.3699 10.4993 18.3699C10.2823 18.3699 10.0698 18.432 9.88686 18.5488L9.07057 19.0738C8.88768 19.1907 8.67517 19.2528 8.45813 19.2528C8.24109 19.2528 8.02858 19.1907 7.84569 19.0738L7.02852 18.5488C6.84563 18.432 6.63312 18.3699 6.41608 18.3699C6.19904 18.3699 5.98653 18.432 5.80364 18.5488L4.98735 19.0738C4.80404 19.1893 4.59156 19.25 4.37491 19.2488C4.14287 19.2488 3.92033 19.1566 3.75626 18.9926C3.59218 18.8285 3.5 18.6059 3.5 18.3738V2.62409Z" stroke-width="1.8" stroke-linecap="round" stroke="#77736F" />
+                    </svg>
+                    <p>Продажи</p>
+                </button>
+            </div>
+
+            <div class="admin_name">
+                <h4>Валиева Самира</h4>
+                <p>Администратор</p>
+            </div>
+            <div class="profile_exit">
+                <button id="openLogoutModal">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3333 5.83333L17.5 10L13.3333 14.1667M17.5 10H7.5M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5" stroke="#77736F" stroke-width="1.8" stroke-linecap="round" />
+                    </svg>
+                    <span>Выйти</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="profile_items admin">
+
+            <div class="tab_content active" data-content="stats">
+                <div class="title_block">
+                    <div class="title">
+                        <div class="subheading">
+                            <hr>
+                            <p>ОБЗОР КИНОТЕАТРА</p>
+                        </div>
+                        <h2>Статистика</h2>
+                    </div>
+                </div>
+
+                <div class="statistika">
+                    <div class="stat_block">
+                        <div class="stat_title">
+                            <p>Выручка за октябрь</p>
+                            <img src="../images/stat1.svg" alt="">
+                        </div>
+                        <h2>8 642 300 ₽</h2>
+                    </div>
+                    <div class="stat_block">
+                        <div class="stat_title">
+                            <p>Занятость залов</p>
+                            <img src="../images/stat2.svg" alt="">
+                        </div>
+                        <h2>68,7%</h2>
+                    </div>
+                    <div class="stat_block">
+                        <div class="stat_title">
+                            <p>Продано билетов</p>
+                            <img src="../images/stat3.svg" alt="">
+                        </div>
+                        <h2>12 460</h2>
+                    </div>
+                </div>
+
+                <div class="form_block">
+                    <h3>Контактные данные компании</h3>
+                    <form action="">
+                        <div class="form_input">
+                            <label>Телефон*</label>
+                            <input type="tel" name="phone" value="+7 (495) 120-44-22">
+                            <img src="../images/phone.svg" alt="">
+                        </div>
+                        <div class="form_input">
+                            <label>Почта*</label>
+                            <input type="text" name="email" value="hello@focus-cinema.ru">
+                            <img src="../images/email.svg" alt="">
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="Сохранить изменения">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="tab_content" data-content="films">
+                <div class="title_block">
+                    <div class="title">
+                        <div class="subheading">
+                            <hr>
+                            <p>ОБЗОР КИНОТЕАТРА</p>
+                        </div>
+                        <h2>Афиша фильмов</h2>
+                    </div>
+                    <button class="mobile-filter-btn" id="openFilterBtnFilms">
+                        <img src="../images/filtr.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="afisha_filtracia" id="filterBlockFilms">
+                    <div class="filtracia_title">
+                        <h3>Фильтрация</h3>
+                        <p>Настройте параметры поиска</p>
+                        <button type="button" class="filter-close-mobile" id="closeFilterBtnFilms">×</button>
+                    </div>
+                    <form action="">
+                        <div class="admin_filter_top">
+                            <div class="afisha_filtr">
+                                <label>Поиск по названию</label>
+                                <div class="afisha_filtracia_search">
+                                    <img src="../images/search_icon.svg" alt="">
+                                    <input type="text" placeholder="Название фильма">
+                                </div>
+                            </div>
+                            <div class="btn admin_filter_btn">
+                                <button type="submit">
+                                    <img src="../images/filtr.svg" alt="">
+                                    Применить
+                                </button>
+                            </div>
+                        </div>
+                        <div class="admin_filter_bottom">
+                            <div class="afisha_filtr">
+                                <label>Цена от</label>
+                                <input type="number" name="min" placeholder="0 ₽">
+                            </div>
+                            <div class="afisha_filtr">
+                                <label>Цена до</label>
+                                <input type="number" name="max" placeholder="1 500 ₽">
+                            </div>
+                            <div class="afisha_filtr">
+                                <label>Статус</label>
+                                <select name="status">
+                                    <option value="all">Все статусы</option>
+                                    <option value="active">В прокате</option>
+                                    <option value="soon">Скоро</option>
+                                    <option value="archive">Архив</option>
+                                </select>
+                            </div>
+                            <div class="afisha_filtr">
+                                <label>Возраст</label>
+                                <select name="age">
+                                    <option value="all">Любой возраст</option>
+                                    <option value="0">0+</option>
+                                    <option value="6">6+</option>
+                                    <option value="12">12+</option>
+                                    <option value="16">16+</option>
+                                    <option value="18">18+</option>
+                                </select>
+                            </div>
+                            <div class="afisha_filtr">
+                                <label>Длительность</label>
+                                <select name="time">
+                                    <option value="all">Любая</option>
+                                    <option value="90">90 мин</option>
+                                    <option value="120">120 мин</option>
+                                    <option value="150">150 мин</option>
+                                </select>
+                            </div>
+                            <div class="admin_filter_reset_wrap">
+                                <a href="#" class="admin_filter_reset">
+                                    <p>×</p>
+                                    <span>Сбросить</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="admin_films">
+                    <div class="admin_films_top">
+                        <a href="?page=create_film">
+                            <button class="add_film_btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                Добавить фильм
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="admin_films_grid">
+                     
+                        <div class="admin_film_card">
+                            <div class="film_img">
+                                <img src="../images/poster.png" alt="">
+                            </div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn">
+                                    <img src="images/edit.svg" alt="">
+                                </a>
+                                <button class="action_btn delete_btn">
+                                    <img src="../images/delete.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="admin_film_card">
+                            <div class="film_img"><img src="../images/poster.png" alt=""></div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn"><img src="images/edit.svg" alt=""></a>
+                                <button class="action_btn delete_btn"><img src="../images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="admin_film_card">
+                            <div class="film_img"><img src="../images/poster.png" alt=""></div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn"><img src="images/edit.svg" alt=""></a>
+                                <button class="action_btn delete_btn"><img src="../images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="admin_film_card">
+                            <div class="film_img"><img src="../images/poster.png" alt=""></div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn"><img src="images/edit.svg" alt=""></a>
+                                <button class="action_btn delete_btn"><img src="../images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="admin_film_card">
+                            <div class="film_img"><img src="../images/poster.png" alt=""></div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn"><img src="images/edit.svg" alt=""></a>
+                                <button class="action_btn delete_btn"><img src="../images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="admin_film_card">
+                            <div class="film_img"><img src="../images/poster.png" alt=""></div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn"><img src="images/edit.svg" alt=""></a>
+                                <button class="action_btn delete_btn"><img src="../images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="admin_film_card">
+                            <div class="film_img"><img src="../images/poster.png" alt=""></div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn"><img src="images/edit.svg" alt=""></a>
+                                <button class="action_btn delete_btn"><img src="../images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="admin_film_card">
+                            <div class="film_img"><img src="../images/poster.png" alt=""></div>
+                            <div class="admin_film_actions">
+                                <a href="?page=edit_film" class="action_btn edit_btn"><img src="images/edit.svg" alt=""></a>
+                                <button class="action_btn delete_btn"><img src="../images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="orders_pagination">
+                        <button class="page_btn active">1</button>
+                        <button class="page_btn">2</button>
+                        <button class="page_btn">3</button>
+                        <button class="page_btn next">
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 9L5 5L1 1" stroke="#A29E9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab_content" data-content="sessions">
+                <div class="title_block">
+                    <div class="title">
+                        <div class="subheading">
+                            <hr>
+                            <p>ОБЗОР КИНОТЕАТРА</p>
+                        </div>
+                        <h2>Сеансы</h2>
+                    </div>
+                </div>
+
+                <div class="days_block">
+                    <img src="../images/CaretLeft.svg" alt="" class="days_prev">
+                    <div class="days_viewport">
+                        <div class="days">
+                            <label>
+                                <input type="radio" name="day" value="2 октября" checked>
+                                <div class="day">
+                                    <div class="week"><p>Сегодня</p></div>
+                                    <div class="data"><p>2 октября</p></div>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="day" value="3 октября">
+                                <div class="day">
+                                    <div class="week"><p>Вт</p></div>
+                                    <div class="data"><p>3 октября</p></div>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="day" value="4 октября">
+                                <div class="day">
+                                    <div class="week"><p>Ср</p></div>
+                                    <div class="data"><p>4 октября</p></div>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="day" value="5 октября">
+                                <div class="day">
+                                    <div class="week"><p>Чт</p></div>
+                                    <div class="data"><p>5 октября</p></div>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="day" value="6 октября">
+                                <div class="day">
+                                    <div class="week"><p>Пт</p></div>
+                                    <div class="data"><p>6 октября</p></div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <img src="../images/CaretRight.svg" alt="" class="days_next">
+                </div>
+
+                <div class="afisha_filtracia filtr_session" id="filterBlockSessions">
+                    <div class="filtracia_title">
+                        <h3>Фильтрация</h3>
+                        <p>Настройте параметры поиска</p>
+                        <button type="button" class="filter-close-mobile" id="closeFilterBtnSessions">×</button>
+                    </div>
+                    <form action="">
+                        <div class="admin_filter_top">
+                            <div class="afisha_filtr">
+                                <label>Поиск по названию</label>
+                                <div class="afisha_filtracia_search">
+                                    <img src="../images/search_icon.svg" alt="">
+                                    <input type="text" placeholder="Название фильма">
+                                </div>
+                            </div>
+                            <div class="btn admin_filter_btn">
+                                <button type="submit">
+                                    <img src="../images/filtr.svg" alt="">
+                                    Применить
+                                </button>
+                            </div>
+                        </div>
+                        <div class="admin_filter_bottom">
+                            <div class="afisha_filtr">
+                                <label>Зал</label>
+                                <select name="hall">
+                                    <option value="all">Любой зал</option>
+                                    <option value="1">Зал 1</option>
+                                    <option value="2">Зал 2</option>
+                                    <option value="3">Зал 3</option>
+                                </select>
+                            </div>
+                            <div class="afisha_filtr">
+                                <label>Формат</label>
+                                <select name="format">
+                                    <option value="all">Формат</option>
+                                    <option value="2D">2D</option>
+                                    <option value="3D">3D</option>
+                                </select>
+                            </div>
+                            <div class="admin_filter_reset_wrap">
+                                <a href="#" class="admin_filter_reset">
+                                    <p>×</p>
+                                    <span>Сбросить</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="schedule_header">
+                    <h2>Расписание на 2 октября</h2>
+                    <button class="mobile-filter-btn" id="openFilterBtnSessions">
+                        <img src="../images/filtr.svg" alt="">
+                    </button>
+                    <a href="?page=create_session">
+                        <button class="add_film_btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2V14M2 8H14" stroke="white" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                            Добавить сеанс
+                        </button>
+                    </a>
+                </div>
+
+                <div class="admin_schedule">
+                    <div class="schedule_list">
+                        <div class="schedule_row schedule_row_head">
+                            <div class="col_film">Фильм</div>
+                            <div class="col_time">Время</div>
+                            <div class="col_hall">Зал</div>
+                            <div class="col_format">Формат</div>
+                            <div class="col_price">Цена</div>
+                            <div class="col_seats">Места</div>
+                            <div class="col_actions">Действия</div>
+                        </div>
+
+                        <div class="schedule_row">
+                            <div class="col_film">
+                                <img src="images/poster.png" alt="" class="film_poster">
+                                <div class="film_info">
+                                    <h4>Приключения мамонтёнка</h4>
+                                    <p>1 ч 36 мин · 6+</p>
+                                </div>
+                            </div>
+                            <div class="col_time">10:10</div>
+                            <div class="col_hall">Зал 2</div>
+                            <div class="col_format">2D</div>
+                            <div class="col_price">390 ₽</div>
+                            <div class="col_seats">
+                                <span class="seats_sold">48 продано</span>
+                                <span class="seats_free">72 свободно</span>
+                            </div>
+                            <div class="col_actions">
+                                <a href="?page=edit_session">
+                                    <button class="action_btn edit_btn"><img src="images/edit.svg" alt=""></button>
+                                </a>
+                                <button class="action_btn delete_btn"><img src="images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+
+                        <div class="schedule_row">
+                            <div class="col_film">
+                                <img src="images/poster.png" alt="" class="film_poster">
+                                <div class="film_info">
+                                    <h4>Приключения мамонтёнка</h4>
+                                    <p>1 ч 36 мин · 6+</p>
+                                </div>
+                            </div>
+                            <div class="col_time">10:10</div>
+                            <div class="col_hall">Зал 2</div>
+                            <div class="col_format">2D</div>
+                            <div class="col_price">390 ₽</div>
+                            <div class="col_seats">
+                                <span class="seats_sold">48 продано</span>
+                                <span class="seats_free">72 свободно</span>
+                            </div>
+                            <div class="col_actions">
+                                <a href="?page=edit_session">
+                                    <button class="action_btn edit_btn"><img src="images/edit.svg" alt=""></button>
+                                </a>
+                                <button class="action_btn delete_btn"><img src="images/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule_footer">
+                        <div class="schedule_info">Показано 1-9 из 100 сеансов</div>
+                        <div class="schedule_pagination">
+                            <button class="page_btn prev_btn">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 1L1 5L5 9" stroke="#A29E9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="page_btn active">1</button>
+                            <button class="page_btn">2</button>
+                            <button class="page_btn">3</button>
+                            <button class="page_btn next_btn">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L1 9" stroke="#A29E9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tab_content" data-content="sales">
+                <div class="title_block">
+                    <div class="title">
+                        <div class="subheading">
+                            <hr>
+                            <p>ОБЗОР КИНОТЕАТРА</p>
+                        </div>
+                        <h2>Продажи</h2>
+                    </div>
+                    <button class="mobile-filter-btn" id="openFilterBtnSales">
+                        <img src="../images/filtr.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="afisha_filtracia" id="filterBlockSales">
+                    <div class="filtracia_title">
+                        <h3>Фильтрация</h3>
+                        <p>Настройте параметры поиска</p>
+                        <button type="button" class="filter-close-mobile" id="closeFilterBtnSales">×</button>
+                    </div>
+                    <form action="">
+                        <div class="admin_filter_top">
+                            <div class="afisha_filtr">
+                                <label>Поиск по названию</label>
+                                <div class="afisha_filtracia_search">
+                                    <img src="../images/search_icon.svg" alt="">
+                                    <input type="text" placeholder="Название фильма">
+                                </div>
+                            </div>
+                            <div class="btn admin_filter_btn">
+                                <button type="submit">
+                                    <img src="../images/filtr.svg" alt="">
+                                    Применить
+                                </button>
+                            </div>
+                        </div>
+                        <div class="admin_filter_bottom">
+                            <div class="afisha_filtr">
+                                <label>Дата от</label>
+                                <input type="date" name="date_from">
+                            </div>
+                            <div class="afisha_filtr">
+                                <label>Дата до</label>
+                                <input type="date" name="date_to">
+                            </div>
+                            <div class="admin_filter_reset_wrap">
+                                <a href="#" class="admin_filter_reset">
+                                    <p>×</p>
+                                    <span>Сбросить</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="schedule_header">
+                    <h2>Журнал заказов</h2>
+                </div>
+
+                <div class="admin_schedule">
+                    <div class="schedule_list">
+                        <div class="schedule_row schedule_row_head">
+                            <div class="col_id">Номер заказа</div>
+                            <div class="col_film">Фильм</div>
+                            <div class="col_time">Дата</div>
+                            <div class="col_hall">Время</div>
+                            <div class="col_format">Зал</div>
+                            <div class="col_seats">Места</div>
+                            <div class="col_price">Сумма</div>
+                        </div>
+
+                        <div class="schedule_row">
+                            <div class="col_id">1</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">2</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">1</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">2</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">1</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">2</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">1</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">2</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                        <div class="schedule_row">
+                            <div class="col_id">2</div>
+                            <div class="col_film">Сумерки</div>
+                            <div class="col_time">02.10.2026</div>
+                            <div class="col_hall">20:50</div>
+                            <div class="col_format">Зал 2</div>
+                            <div class="col_seats">Ряд 5 - 5, 6</div>
+                            <div class="col_price">1 300 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="schedule_footer">
+                        <div class="schedule_info">Показано 1-9 из 1 846 заказов</div>
+                        <div class="schedule_pagination">
+                            <button class="page_btn prev_btn">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 1L1 5L5 9" stroke="#A29E9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="page_btn active">1</button>
+                            <button class="page_btn">2</button>
+                            <button class="page_btn">3</button>
+                            <button class="page_btn">4</button>
+                            <button class="page_btn">5</button>
+                            <button class="page_btn next_btn">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L1 9" stroke="#A29E9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+ <!-- МОДАЛЬНОЕ ОКНО УДАЛЕНИЯ -->
+        <div class="modal" id="deleteModal">
+            <div class="modal-bg" id="modalBg"></div>
+            <div class="modal-content">
+
+                <div class="modal-poster">
+                    <img src="../images/poster2.png" alt="Постер">
+                </div>
+
+                <div class="modal-info">
+                    <div class="modal-top">
+                        <div class="modal-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 6H5H21M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17"
+                                    stroke="#E52B2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Удалить фильм «Сумерки»?</h3>
+                        <button class="modal-close" id="modalClose">×</button>
+                    </div>
+
+                    <p>Вы действительно хотите удалить афишу "Сумерки"?<br>Данное действие нельзя отменить</p>
+
+                    <div class="modal-actions">
+                        <button class="btn-cancel" id="modalCancel">Отмена</button>
+                        <button class="btn-delete">Удалить фильм</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+<!-- МОДАЛЬНОЕ ОКНО УДАЛЕНИЯ СЕАНСА -->
+<div class="modal modal-session" id="deleteSessionModal">
+    <div class="modal-bg" id="modalSessionBg"></div>
+    <div class="modal-content-session">
+
+
+        <div class="modal-session-top">
+            <div class="modal-session-title-wrap">
+                <div class="modal-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 6H5H21M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17"
+                            stroke="#E52B2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Удалить сеанс?</h3>
+            </div>
+            <button class="modal-close" id="modalSessionClose">×</button>
+        </div>
+
+   
+        <p class="modal-session-desc">Вы действительно хотите удалить сеанс "Сумерки"<br>на 19:20? Данное действие
+            нельзя отменить</p>
+
+        <div class="modal-session-card">
+            <div class="modal-session-poster">
+                <img src="../images/poster.png" alt="Постер">
+            </div>
+            <div class="modal-session-info">
+                <div class="session-info-row">
+                    <span class="session-info-label">Фильм</span>
+                    <span class="session-info-value">Сумерки</span>
+                </div>
+                <div class="session-info-row">
+                    <span class="session-info-label">Дата</span>
+                    <span class="session-info-value">21.10.2026, 19:20</span>
+                </div>
+                <div class="session-info-row">
+                    <span class="session-info-label">Зал</span>
+                    <span class="session-info-value">Зал 1</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal-session-actions">
+            <button class="btn-cancel" id="modalSessionCancel">Отмена</button>
+            <button class="btn-delete-session">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3 6H5H21M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                Удалить сеанс
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- модалка выхода -->
+<div class="logout-modal" id="logoutModal">
+    <div class="logout-modal__overlay" id="closeLogoutModalOverlay"></div>
+    <div class="logout-modal__content">
+        <button class="logout-modal__close" id="closeLogoutModalBtn">×</button>
+        <h3>Вы уверены, что хотите выйти?</h3>
+        <p>Вам придется снова войти в аккаунт, чтобы просматривать билеты и историю заказов.</p>
+        <div class="logout-modal__actions">
+            <button class="btn-cancel" id="cancelLogout">Отмена</button>
+            <a href="/?page=logout" class="btn-confirm">Выйти</a>
+        </div>
+    </div>
+</div>
+<!-- модалка выхода конец -->   

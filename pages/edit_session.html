@@ -1,0 +1,100 @@
+<div class="create_session container py-100">
+<div class="title_block">
+    <div class="title">
+        <div class="subheading">
+            <hr>
+            <p>ПАРАМЕТРЫ ПОКАЗА</p>
+        </div>
+        <h2>Редактирование сеанса</h2>
+    </div>
+</div>
+
+<div class="create_session_block">
+    <form action="">
+        <h3>Параметры сеанса</h3>
+        
+        <div class="session_form_grid">
+
+            <div class="form_group">
+                <label>Фильм</label>
+                <div class="select_wrapper">
+                    <select name="film">
+                        <option value="1" selected>Сумерки</option>
+                        <option value="2">Приключения мамонтёнка</option>
+                    </select>
+                    <img src="../images/arrow_down.svg" alt="" class="select_arrow">
+                </div>
+            </div>
+
+            <div class="form_group">
+                <label>Зал</label>
+                <div class="select_wrapper">
+                    <select name="hall">
+                        <option value="1">Зал 1</option>
+                        <option value="2" selected>Зал 2</option>
+                        <option value="3">Зал 3</option>
+                    </select>
+                    <img src="../images/arrow_down.svg" alt="" class="select_arrow">
+                </div>
+            </div>
+
+
+            <div class="form_group">
+                <label>Дата</label>
+                <div class="select_wrapper">
+                    <select name="date">
+                        <option value="1">2 октября</option>
+                        <option value="2" selected>3 октября</option>
+                    </select>
+                    <img src="../images/arrow_down.svg" alt="" class="select_arrow">
+                </div>
+            </div>
+
+            <div class="form_group">
+                <label>Время начала</label>
+                <input type="time" name="time_start" value="20:50">
+            </div>
+
+            <div class="form_group">
+                <label>Время окончания</label>
+                <input type="time" name="time_end" value="22:52">
+            </div>
+
+  
+            <div class="form_group">
+                <label>Цена билета</label>
+                <input type="number" name="price" value="390">
+            </div>
+
+            <div class="form_group format_col">
+                <label>Формат</label>
+                <div class="select_wrapper">
+                    <select name="format">
+                        <option value="2D" selected>2D</option>
+                        <option value="3D">3D</option>
+                        <option value="IMAX">IMAX</option>
+                    </select>
+                    <img src="../images/arrow_down.svg" alt="" class="select_arrow">
+                </div>
+            </div>
+        </div>
+
+
+        <button type="submit" class="save_btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16L21 8V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 3V8H15V3M7 21V15H17V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+            Сохранить изменения
+        </button>
+
+
+        <a href="/?page=admin" class="back_link">
+               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="#A29E9A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+            Вернуться к просмотру сеансов
+        </a>
+    </form>
+</div>
+</div>

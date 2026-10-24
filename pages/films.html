@@ -1,0 +1,250 @@
+<div class="films_title">
+    <div class="films_text container">
+        <h1>АФИША</h1>
+        <p>Премьеры, фестивальное кино и любимые истории на большом экране. Выберите фильм и время — остальное оставьте
+            нам.</p>
+    </div>
+</div>
+
+
+<div class="afisha_filter_overlay" id="filterOverlay"></div>
+
+<div class="afisha_filtracia container" id="filterBlock">
+    <div class="filtracia_title">
+        <h3>Найдите свой фильм</h3>
+        <p>Уточните параметры желаемых фильмов</p>
+        <button type="button" class="afisha_filter_close" id="filterClose" aria-label="Закрыть">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 6L18 18M18 6L6 18" stroke="#F3EFE9" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+    </div>
+    <form action="">
+        <div class="afisha_filtr">
+            <label>Поиск по названию</label>
+            <div class="afisha_filtracia_search">
+                <img src="../images/search_icon.svg" alt="">
+                <input type="text" placeholder="Название фильма">
+            </div>
+        </div>
+        <div class="afisha_filtrs">
+
+            <div class="afisha_filtr">
+
+                <label>Сортировка</label>
+                <select name="sort">
+                    <option value="1">Сначала популярное</option>
+                    <option value="2">Сначала дороже</option>
+                    <option value="3">Сначала дешевле</option>
+                </select>
+            </div>
+            <div class="afisha_filtr">
+                <label>Возраст</label>
+                <select name="age">
+                    <option value="1">Любой возраст</option>
+                    <option value="2">0+</option>
+                    <option value="3">6+</option>
+                    <option value="4">12+</option>
+                    <option value="5">16+</option>
+                    <option value="6">18+</option>
+                </select>
+            </div>
+            <div class="afisha_filtr">
+                <label>Цена от</label>
+                <input type="number" name="min" placeholder="0₽">
+            </div>
+            <div class="afisha_filtr">
+                <label>Цена до</label>
+                <input type="number" name="max" placeholder="0₽">
+            </div>
+            <div class="afisha_filtr">
+                <label>Длительность</label>
+                <select name="time">
+                    <option value="1">Любое время</option>
+                    <option value="2">90 мин</option>
+                    <option value="3">120 мин</option>
+                    <option value="4">150 мин</option>
+                    <option value="5">180 мин</option>
+                </select>
+            </div>
+        </div>
+        <div class="afisha_filtr_btns">
+            <div class="btn">
+                <button type="submit">
+                    <img src="../images/filtr.svg" alt="">
+                    <p>Применить</p>
+                </button>
+            </div>
+            <a href="#">
+                <img src="../images/krest.svg" alt="">
+                <p>Сбросить фильтры</p>
+            </a>
+        </div>
+    </form>
+</div>
+
+<div class="afisha_films container">
+    <div class="afisha_films_title">
+        <div class="afisha_films_title_text">
+            <h2>Фильмы в прокате</h2>
+            <p>Найдено 15 фильмов</p>
+        </div>
+        <button type="button" class="afisha_filter_toggle" id="filterToggle">
+            <img src="../images/filtr_icon.svg" alt="">
+        </button>
+    </div>
+    <div class="films_block">
+        <a href="/?page=film">
+            <div class="film">
+                <p class="age">6+</p>
+                <img src="../images/poster.png" alt="">
+                <img src="../images/film_hover.png" alt="" class="film_poster">
+                <div class="film_hover">
+                    <h3>Приключения мамонтёнка</h3>
+                    <span class="film_genre">Анимация</span>
+                    <p class="film_duration">1 ч 36 мин</p>
+                </div>
+            </div>
+        </a>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster2.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster3.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster4.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster2.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster3.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster4.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster2.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster3.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster4.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster2.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+        <div class="film">
+            <p class="age">6+</p>
+            <img src="../images/poster3.png" alt="">
+            <img src="../images/film_hover.png" alt="" class="film_poster">
+            <div class="film_hover">
+                <h3>Приключения мамонтёнка</h3>
+                <span class="film_genre">Анимация</span>
+                <p class="film_duration">1 ч 36 мин</p>
+            </div>
+        </div>
+    </div>
+</div>
